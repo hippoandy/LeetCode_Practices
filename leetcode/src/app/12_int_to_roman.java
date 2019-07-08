@@ -1,3 +1,7 @@
+package app;
+
+import java.util.HashMap;
+
 class Solution {
     HashMap<Integer, String> A = new HashMap<Integer, String>();
     HashMap<Integer, String> B = new HashMap<Integer, String>();

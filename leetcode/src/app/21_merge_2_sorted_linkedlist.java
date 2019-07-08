@@ -8,7 +8,15 @@ package app;
  *     ListNode(int x) { val = x; }
  * }
  */
-class Solution {
+
+class Solution
+{
+    public class ListNode {
+        int val;
+        ListNode next;
+        ListNode(int x) { val = x; }
+    }
+
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         // head node
         ListNode merge = new ListNode( 0 );
