@@ -3,7 +3,7 @@ package app;
 import java.util.Map;
 import java.util.HashMap;
 
-class Solution {
+class Q169_majority_element {
     public int majorityElement(int[] nums)
     {
         HashMap<Integer, Integer> dict = new HashMap<Integer, Integer>();

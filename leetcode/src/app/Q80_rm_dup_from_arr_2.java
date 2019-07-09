@@ -1,6 +1,6 @@
 package app;
 
-class Solution {
+class Q80_rm_dup_from_arr_2 {
     public int removeDuplicates(int[] nums) {
         int start = 0, count = 1;
         for( int i = 1; i < nums.length; i++ )

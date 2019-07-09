@@ -1,6 +1,6 @@
 package app;
 
-class Solution {
+class Q169_majority_element_boyer_moore {
     public int majorityElement(int[] nums)
     {
         int count = 0, major = nums[ 0 ];

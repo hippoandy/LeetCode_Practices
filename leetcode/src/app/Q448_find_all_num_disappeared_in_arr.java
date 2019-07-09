@@ -4,7 +4,7 @@ import java.lang.Math;
 import java.util.List; 
 import java.util.ArrayList; 
 
-class Solution {
+class Q448_find_all_num_disappered_in_arr {
     public List<Integer> findDisappearedNumbers(int[] nums)
     {
         for( int i = 0; i < nums.length; i++ )

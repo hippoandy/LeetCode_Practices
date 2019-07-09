@@ -2,7 +2,7 @@ package app;
 
 import java.util.HashMap;
 
-class Solution {
+class Q13_roman_to_int {
     public int romanToInt(String s) {
         if( s == null || s.length() == 0 ) return 0;
         HashMap<Character, Integer> map = new HashMap<Character, Integer>();

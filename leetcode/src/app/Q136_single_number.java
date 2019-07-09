@@ -2,7 +2,7 @@ package app;
 
 import java.util.*;
 
-class Solution {
+class Q136_single_number {
     public int singleNumber(int[] nums)
     {
         HashMap<Integer, Integer> dict = new HashMap<Integer, Integer>();

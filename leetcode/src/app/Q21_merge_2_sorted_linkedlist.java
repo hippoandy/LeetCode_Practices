@@ -9,7 +9,7 @@ package app;
  * }
  */
 
-class Solution
+class Q21_merge_2_sorted_linkedlist
 {
     public class ListNode {
         int val;

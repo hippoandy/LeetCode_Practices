@@ -3,7 +3,7 @@ package app;
 import java.util.*;
 
 // Math
-class Solution {
+class Q136_single_number_NES {
     public int singleNumber(int[] nums)
     {
         Set<Integer> set = new HashSet<Integer>();

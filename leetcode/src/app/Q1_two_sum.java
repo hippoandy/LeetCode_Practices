@@ -2,7 +2,7 @@ package app;
 
 import java.util.HashMap;
 
-class Solution {
+public class Q1_two_sum {
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> dict = new HashMap<Integer, Integer>();
         // number as key, index as value

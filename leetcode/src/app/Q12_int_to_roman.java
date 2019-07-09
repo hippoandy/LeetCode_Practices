@@ -2,7 +2,7 @@ package app;
 
 import java.util.HashMap;
 
-class Solution {
+public class Q12_int_to_roman {
     HashMap<Integer, String> A = new HashMap<Integer, String>();
     HashMap<Integer, String> B = new HashMap<Integer, String>();
     HashMap<Integer, String> C = new HashMap<Integer, String>();

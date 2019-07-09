@@ -2,7 +2,7 @@ package app;
 
 import java.lang.Math;
 
-class Solution {
+class Q53_maximum_subarray {
     public int maxSubArray(int[] nums)
     {
         int[] dp = new int[ nums.length ];

@@ -12,7 +12,7 @@ import java.util.*;
  * }
  */
 
-class Solution {
+class Q226_invert_binary_tree_ITERATIVE {
 
     public class TreeNode {
         int val;

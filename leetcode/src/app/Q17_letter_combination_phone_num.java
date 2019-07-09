@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-class Solution
+class Q17_letter_combination_phone_num
 {
     HashMap<String, String> map = new HashMap<String, String>();
     List<String> output = new ArrayList<String>();

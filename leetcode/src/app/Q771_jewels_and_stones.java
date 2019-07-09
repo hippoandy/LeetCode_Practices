@@ -3,7 +3,7 @@ package app;
 import java.util.Map;
 import java.util.HashMap;
 
-class Solution {
+class Q771_jewels_and_stones {
     public int numJewelsInStones(String J, String S)
     {
         HashMap<Character, Integer> dict = new HashMap<Character, Integer>();

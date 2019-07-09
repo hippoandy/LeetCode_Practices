@@ -9,8 +9,8 @@ package app;
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution
-{
+
+class Q226_invert_binary_tree_RECURSIVE {
     public class TreeNode {
         int val;
         TreeNode left;
@@ -18,17 +18,15 @@ class Solution
         TreeNode(int x) { val = x; }
     }
 
-    int sum = 0;
-
-    public TreeNode convertBST(TreeNode root)
+    public TreeNode invertTree(TreeNode root)
     {
-        if( root != null )
-        {
-            convertBST( root.right );
-            sum += root.val;
-            root.val = sum;
-            convertBST( root.left );
-        }
+        if( root == null ) return null;
+
+        TreeNode right = invertTree( root.right );
+        TreeNode left = invertTree( root.left );
+        root.right = left;
+        root.left = right;
+        
         return root;
     }
 }

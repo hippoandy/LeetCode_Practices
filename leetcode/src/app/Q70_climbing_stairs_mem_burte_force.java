@@ -1,7 +1,7 @@
 package app;
 
 // improved brute-force
-class Solution {
+class Q70_climbing_stairs_mem_brute_force {
     public int climbStairs(int n)
     {
         // brute-force

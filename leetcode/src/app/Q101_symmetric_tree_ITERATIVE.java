@@ -11,7 +11,7 @@ import java.util.*;
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution {
+class Q101_symmetric_tree_ITERATIVE {
 
     public class TreeNode {
         int val;

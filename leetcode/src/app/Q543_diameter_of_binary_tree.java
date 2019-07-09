@@ -12,7 +12,7 @@ import java.lang.Math;
  * }
  */
 
-class Solution {
+class Q543_diameter_of_binary_tree {
 
     public class TreeNode {
         int val;

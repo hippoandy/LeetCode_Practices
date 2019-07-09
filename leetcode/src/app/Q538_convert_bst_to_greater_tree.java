@@ -9,8 +9,8 @@ package app;
  *     TreeNode(int x) { val = x; }
  * }
  */
-
-class Solution {
+class Q538_convert_bst_to_greater_tree
+{
     public class TreeNode {
         int val;
         TreeNode left;
@@ -18,15 +18,17 @@ class Solution {
         TreeNode(int x) { val = x; }
     }
 
-    public TreeNode invertTree(TreeNode root)
-    {
-        if( root == null ) return null;
+    int sum = 0;
 
-        TreeNode right = invertTree( root.right );
-        TreeNode left = invertTree( root.left );
-        root.right = left;
-        root.left = right;
-        
+    public TreeNode convertBST(TreeNode root)
+    {
+        if( root != null )
+        {
+            convertBST( root.right );
+            sum += root.val;
+            root.val = sum;
+            convertBST( root.left );
+        }
         return root;
     }
 }

@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-class Solution {
+public class Q15_3sum {
     // two pointers
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> result = new ArrayList<List<Integer>>();

@@ -3,7 +3,7 @@ package app;
 import java.util.List;
 import java.util.ArrayList;
 
-class Solution {
+class Q229_majority_element_2 {
     public List<Integer> majorityElement(int[] nums)
     {
         List<Integer> sol = new ArrayList<Integer>();

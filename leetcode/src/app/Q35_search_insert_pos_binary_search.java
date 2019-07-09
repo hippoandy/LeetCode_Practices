@@ -1,6 +1,6 @@
 package app;
 
-class Solution {
+class Q35_search_insert_pos_binary_search {
     public int searchInsert(int[] nums, int target) {
         int i = 0, j = nums.length - 1, l = 0;
         while( i <= j )
