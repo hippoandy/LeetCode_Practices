@@ -1,7 +1,6 @@
 package app;
 
-import java.util.Map;
-import java.util.HashMap;
+import java.util.*;
 
 class Solution {
     public int singleNumber(int[] nums)
