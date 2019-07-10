@@ -1,3 +1,5 @@
+// ref. https://leetcode.com/problems/intersection-of-two-linked-lists/discuss/322873/java-solution
+
 package app;
 
 public class Q160_intersection_of_2_linked_lists_TWOPOINTER
