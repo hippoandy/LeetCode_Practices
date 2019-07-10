@@ -12,7 +12,7 @@ package app;
  * }
  */
 
-class Solution {
+class Q112_path_sum_NES {
 
     public class TreeNode {
         int val;
