@@ -2,7 +2,7 @@ package app;
 
 // brute-force
 // time-limit exceeded!!
-class Q70_climbing_stairs_burte_force {
+class Q70_climbing_stairs_BF {
     public int climbStairs(int n)
     {
         return climb( 0, n );

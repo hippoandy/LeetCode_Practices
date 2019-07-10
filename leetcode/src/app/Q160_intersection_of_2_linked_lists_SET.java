@@ -2,7 +2,7 @@ package app;
 
 import java.util.*;
 
-public class Q160_intersection_of_2_linked_lists_set
+public class Q160_intersection_of_2_linked_lists_SET
 {
 
     class ListNode {

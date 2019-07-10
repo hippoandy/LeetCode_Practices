@@ -2,7 +2,7 @@ package app;
 
 // dynamic programming
 // dp[ i ] = dp[ i - 1 ] + dp[ i - 2 ]
-class Q70_climbing_stairs_dp {
+class Q70_climbing_stairs_DP {
     public int climbStairs(int n)
     {
         // base case

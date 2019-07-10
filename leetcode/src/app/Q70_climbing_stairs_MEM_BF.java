@@ -1,7 +1,7 @@
 package app;
 
 // improved brute-force
-class Q70_climbing_stairs_mem_brute_force {
+class Q70_climbing_stairs_MEM_BF {
     public int climbStairs(int n)
     {
         // brute-force

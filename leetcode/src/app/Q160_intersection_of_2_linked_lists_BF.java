@@ -13,7 +13,7 @@ package app;
  */
 
  // brute force
-public class Q160_intersection_of_2_linked_lists_brute_force
+public class Q160_intersection_of_2_linked_lists_BF
 {
     class ListNode {
         int val;
