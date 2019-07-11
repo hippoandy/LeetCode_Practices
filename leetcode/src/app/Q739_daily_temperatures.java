@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/daily-temperatures/discuss/109869/JavaC%2B%2B-Clean-Code
+
 package app;
 
 import java.lang.Math;
