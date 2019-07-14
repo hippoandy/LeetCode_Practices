@@ -4,7 +4,7 @@ package app;
 
 import java.util.*;
 
-class SoluQ394_decode_stringtion
+class Q394_decode_string
 {
     public String decodeString(String s)
     {

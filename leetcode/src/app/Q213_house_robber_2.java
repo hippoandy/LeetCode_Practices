@@ -2,7 +2,8 @@ package app;
 
 import java.lang.Math;
 
-class Q213_house_robber_II {
+class Q213_house_robber_2
+{
     public int rob(int[] nums)
     {
         if( nums.length == 0 ) return 0;
