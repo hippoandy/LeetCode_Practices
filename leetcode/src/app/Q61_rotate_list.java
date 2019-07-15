@@ -1,3 +1,5 @@
+// ref. https://leetcode.com/problems/rotate-list/discuss/22715/Share-my-java-solution-with-explanation
+
 package app;
 
 /**
