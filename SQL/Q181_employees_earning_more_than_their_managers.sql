@@ -13,7 +13,7 @@
 # using JOIN
 # 315 ms
 SELECT a.NAME AS Employee
-FROM Employee as a
+FROM Employee AS a
 JOIN Employee AS b
     ON a.ManagerId = b.Id
         AND a.Salary > b.Salary
