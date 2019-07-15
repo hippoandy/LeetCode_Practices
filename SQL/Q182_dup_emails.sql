@@ -4,7 +4,7 @@
 SELECT Email FROM
 (
     # create the temporary table
-    SELECT Email, count( Email ) as cnt
+    SELECT Email, count( Email ) AS cnt
     FROM Person
     GROUP BY Email
 ) AS tmp
