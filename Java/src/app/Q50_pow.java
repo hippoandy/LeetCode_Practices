@@ -2,7 +2,7 @@
 
 package app;
 
-class Q50_Pow
+class Q50_pow
 {
     public double myPow(double x, int n)
     {
