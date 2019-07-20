@@ -21,11 +21,12 @@ import java.util.*;
  *     public List<NestedInteger> getList();
  * }
  */
-public class NestedIterator implements Iterator<Integer>
+
+public class Q341_flatten_nested_list_iterator implements Iterator<Integer>
 {
     Stack<NestedInteger> stack = new Stack<>();
 
-    public NestedIterator(List<NestedInteger> nestedList)
+    public Q341_flatten_nested_list_iterator( List<NestedInteger> nestedList )
     {
         for( int i = nestedList.size() - 1; i >= 0; i-- )
             stack.push( nestedList.get( i ) );
