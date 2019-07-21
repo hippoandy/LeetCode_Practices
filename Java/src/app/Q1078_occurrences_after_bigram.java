@@ -1,3 +1,5 @@
+// ref. https://leetcode.com/problems/occurrences-after-bigram/discuss/339935/Easy-Java-Solution-Using-Stacks-100-Memory
+
 package app;
 
 import java.util.*;
