@@ -1,3 +1,5 @@
+// ref. https://leetcode.com/problems/available-captures-for-rook/discuss/339544/Simple-c%2B%2B-solution
+
 package app;
 
 class Q999_available_captures_for_rook
