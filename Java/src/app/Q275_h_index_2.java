@@ -5,7 +5,7 @@ class Q275_h_index_2
     // Given a sorted list citations of size n in ascending order, one is asked to find the first number citations[i] which meets the constraint of citations[i] >= n - i.
     public int hIndex(int[] citations)
     {
-        int idx = 0, n = citations.length;
+        int n = citations.length;
         int left = 0, right = n - 1;
         int pivot = 0;
         while( left <= right )
