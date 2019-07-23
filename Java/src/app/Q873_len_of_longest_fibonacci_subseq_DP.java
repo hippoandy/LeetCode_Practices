@@ -2,6 +2,8 @@ package app;
 
 import java.util.*;
 
+// Runtime: 59 ms, faster than 75.80% of Java online submissions for Length of Longest Fibonacci Subsequence.
+// Memory Usage: 38.7 MB, less than 96.20% of Java online submissions for Length of Longest Fibonacci Subsequence.
 class Q873_len_of_longest_fibonacci_subseq_DP
 {
     public int lenLongestFibSubseq(int[] A)
