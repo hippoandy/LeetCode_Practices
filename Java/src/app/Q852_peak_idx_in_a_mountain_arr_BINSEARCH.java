@@ -1,6 +1,7 @@
 package app;
 
-class Solution {
+class Q852_peak_idx_in_a_mountain_arr_BINSEARCH
+{
     public int peakIndexInMountainArray(int[] A)
     {
         int low = 0, high = A.length - 1;
