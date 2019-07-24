@@ -1,3 +1,5 @@
+// ref. https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/discuss/37828/O(1)-space-O(n)-complexity-Iterative-Solution
+
 package app;
 
 /*
