@@ -1,3 +1,5 @@
+// ref. https://leetcode.com/problems/design-linked-list/discuss/213901/Simple-Java-solution
+
 package app;
 
 // Runtime: 53 ms, faster than 69.30% of Java online submissions for Design Linked List.
