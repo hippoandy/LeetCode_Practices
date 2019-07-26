@@ -22,39 +22,42 @@ import java.util.*;
  * }
  */
 
-public class Q341_flatten_nested_list_iterator implements Iterator<Integer>
+public class Q341_flatten_nested_list_iterator
 {
-    Stack<NestedInteger> stack = new Stack<>();
-
-    public Q341_flatten_nested_list_iterator( List<NestedInteger> nestedList )
+    class NestedIterator implements Iterator<Integer>
     {
-        for( int i = nestedList.size() - 1; i >= 0; i-- )
-            stack.push( nestedList.get( i ) );
-    }
+        Stack<NestedInteger> stack = new Stack<>();
 
-    @Override
-    public Integer next()
-    {
-        return stack.pop().getInteger();
-    }
-
-    @Override
-    public boolean hasNext()
-    {
-        while( !stack.isEmpty() )
+        public NestedIterator( List<NestedInteger> nestedList )
         {
-            NestedInteger t = stack.peek();
-            if( t.isInteger() ) return true;
-            stack.pop();
-            for( int i = t.getList().size() - 1; i >= 0; i-- )
-                stack.push( t.getList().get( i ) );
+            for( int i = nestedList.size() - 1; i >= 0; i-- )
+                stack.push( nestedList.get( i ) );
         }
-        return false;
-    }
-}
 
-/**
- * Your NestedIterator object will be instantiated and called as such:
- * NestedIterator i = new NestedIterator(nestedList);
- * while (i.hasNext()) v[f()] = i.next();
- */
+        @Override
+        public Integer next()
+        {
+            return stack.pop().getInteger();
+        }
+
+        @Override
+        public boolean hasNext()
+        {
+            while( !stack.isEmpty() )
+            {
+                NestedInteger t = stack.peek();
+                if( t.isInteger() ) return true;
+                stack.pop();
+                for( int i = t.getList().size() - 1; i >= 0; i-- )
+                    stack.push( t.getList().get( i ) );
+            }
+            return false;
+        }
+    }
+
+    /**
+     * Your NestedIterator object will be instantiated and called as such:
+     * NestedIterator i = new NestedIterator(nestedList);
+     * while (i.hasNext()) v[f()] = i.next();
+     */
+}
