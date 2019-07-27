@@ -39,5 +39,4 @@ class Q62_unique_paths
             }
         return dp[ m-1 ][ n-1 ];
     }
-    }
 }
