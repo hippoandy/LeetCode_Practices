@@ -1,3 +1,5 @@
+// ref. [WIKIPEDIA] https://www.wikiwand.com/zh-tw/Trie
+
 package app;
 
 public class Q208_implement_trie_prefix_tree
