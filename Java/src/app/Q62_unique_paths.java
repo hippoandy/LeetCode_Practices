@@ -23,7 +23,8 @@ class Q62_unique_paths
     // simplifed
     public int uniquePaths(int m, int n)
     {
-        int[][] map = new int[ m+1 ][ n+1 ];
+        // stores how many solutions to get to the current cell
+        int[][] dp = new int[ m+1 ][ n+1 ];
 
         // result = uniquePaths(m-1,n) + uniquePaths(m,n-1)
         // The top row of 1s is always filled first, but the question of the left-most column depends on the fact that the loops actually go left-to-right on each row before advancing.
@@ -31,10 +32,12 @@ class Q62_unique_paths
         for( int i = 0; i < m; i++ )
             for( int j = 0; j < n; j++ )
             {
-                if( i == 0 || j == 0 ) map[ i ][ j ] = 1;
+                if( i == 0 || j == 0 ) dp[ i ][ j ] = 1;
                 else
-                    map[ i ][ j ] = map[ i -1 ][ j ] + map[ i ][ j - 1];
+                    // from previous location left or up, since the robot could only go right or down
+                    dp[ i ][ j ] = dp[ i -1 ][ j ] + dp[ i ][ j - 1];
             }
-        return map[ m-1 ][ n-1 ];
+        return dp[ m-1 ][ n-1 ];
+    }
     }
 }
