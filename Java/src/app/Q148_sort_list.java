@@ -56,10 +56,8 @@ class Q148_sort_list
             ptr = ptr.next;
         }
         // check remainings if the 2 lists are not in the same size
-        if( l != null )
-            ptr.next = l;
-        if( r != null )
-            ptr.next = r;
+        if( l != null ) ptr.next = l;
+        if( r != null ) ptr.next = r;
         
         return dummy.next;
     }
