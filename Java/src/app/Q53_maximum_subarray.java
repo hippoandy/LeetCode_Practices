@@ -1,3 +1,5 @@
+// ref. https://leetcode.com/problems/maximum-subarray/discuss/20193/DP-solution-and-some-thoughts
+
 package app;
 
 import java.lang.Math;
