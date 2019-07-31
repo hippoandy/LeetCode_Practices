@@ -1,5 +1,6 @@
 package app;
 
+// Time complexity: O(n), where n is num. of all the element in A
 class Q832_flipping_an_image
 {
     public int[][] flipAndInvertImage(int[][] A)
