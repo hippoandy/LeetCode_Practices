@@ -11,8 +11,8 @@ class Q309_best_time_to_buy_and_sell_stock_with_cooldown
         if( prices.length <= 1 ) return 0;
         
         /* transition function:
-         * buy[i] = Math.max(buy[i - 1], sell[i - 2] - prices[i]);
-         * sell[i] = Math.max(sell[i - 1], buy[i - 1] + prices[i]);
+         * buy[ i ]  = Math.max(  buy[ i-1 ], sell[ i-2 ] - prices[ i ] ); // sell 2 days ago and buy today
+         * sell[ i ] = Math.max( sell[ i-1 ],  buy[ i-1 ] + prices[ i ] ); // buy yesterday and sell today
          */
         
         // init
