@@ -28,8 +28,9 @@ public class Q341_flatten_nested_list_iterator
     {
         Stack<NestedInteger> stack = new Stack<>();
 
-        public NestedIterator( List<NestedInteger> nestedList )
+        public NestedIterator(List<NestedInteger> nestedList)
         {
+            // insert the stack from the back
             for( int i = nestedList.size() - 1; i >= 0; i-- )
                 stack.push( nestedList.get( i ) );
         }
@@ -37,6 +38,7 @@ public class Q341_flatten_nested_list_iterator
         @Override
         public Integer next()
         {
+            // function hasNext() will make sure the top element is an integer
             return stack.pop().getInteger();
         }
 
@@ -47,7 +49,9 @@ public class Q341_flatten_nested_list_iterator
             {
                 NestedInteger t = stack.peek();
                 if( t.isInteger() ) return true;
-                stack.pop();
+                // open up the nested list and insert the element to stack
+                stack.pop();            
+                // insert the stack from the back
                 for( int i = t.getList().size() - 1; i >= 0; i-- )
                     stack.push( t.getList().get( i ) );
             }
