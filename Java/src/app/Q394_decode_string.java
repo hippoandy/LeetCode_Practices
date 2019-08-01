@@ -15,11 +15,12 @@ class Q394_decode_string
         int idx = 0;
         while( idx < s.length() )
         {
-            if( Character.isDigit( s.charAt( idx) ) )
+            if( Character.isDigit( s.charAt( idx ) ) )
             {
                 int count = 0;
                 while( Character.isDigit( s.charAt( idx ) ) )
                 {
+                    // to create number for caselike "32[a]"
                     count = 10 * count + s.charAt( idx ) - '0';
                     idx++;
                 }
