@@ -6,18 +6,23 @@ class Q50_pow
 {
     public double myPow(double x, int n)
     {
-        if(n >= 0) return helper( x, n );
-        return 1 / helper( x, n );
+        if( n >= 0 )
+            return helper( x, n );
+        // for negative num of pow
+        else
+            return 1 / helper( x, n );
     }
     
     private double helper( double x, int n )
     {
         if( n == 0 ) return 1;
-        double half = helper( x, n/2 );
+
+        double half = helper( x, n / 2 );
         
-        if( n%2 == 0 )  return half*half;
-        
+        if( n % 2 == 0 )  return half * half;
+
         // for the iteration n == 1
-        return half*half*x;
+        // return from n == 0, half == 1!!
+        return half * half * x;
     }
 }
