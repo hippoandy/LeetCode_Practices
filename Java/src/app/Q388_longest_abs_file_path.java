@@ -1,4 +1,4 @@
-ref. https://leetcode.com/problems/longest-absolute-file-path/discuss/86666/Java-O(n)-Solution-Using-Stack
+// ref. https://leetcode.com/problems/longest-absolute-file-path/discuss/86666/Java-O(n)-Solution-Using-Stack
 
 package app;
 
