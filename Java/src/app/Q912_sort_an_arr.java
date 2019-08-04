@@ -18,37 +18,37 @@ class Q912_sort_an_arr
     /* ******************** quick sort ******************** */
     // Runtime: 8 ms, faster than 37.64% of Java online submissions for Sort an Array.
     // Memory Usage: 40.8 MB, less than 100.00% of Java online submissions for Sort an Array.
-    private void quickSort( int[] nums, int l, int h )
-    {
-        if( l < h )
-        {
-            int pi = partition( nums, l, h );
-            quickSort( nums, l, pi-1 );
-            quickSort( nums, pi+1, h );
-        }
-    }
-    private int partition( int[] nums, int l, int h )
-    {
-        int pivot = nums[ h ];
+    // private void quickSort( int[] nums, int l, int h )
+    // {
+    //     if( l < h )
+    //     {
+    //         int pi = partition( nums, l, h );
+    //         quickSort( nums, l, pi-1 );
+    //         quickSort( nums, pi+1, h );
+    //     }
+    // }
+    // private int partition( int[] nums, int l, int h )
+    // {
+    //     int pivot = nums[ h ];
         
-        int i = (l - 1);
-        for( int j = l; j < h; j++ )
-        {
-            if( nums[ j ] <= pivot )
-            {
-                i++;
-                swap( nums, i, j );
-            }
-        }
-        swap( nums, i+1, h );
-        return i+1;
-    }
-    private void swap( int[] nums, int i, int j )
-    {
-        int t = nums[ i ];
-        nums[ i ] = nums[ j ];
-        nums[ j ] = t;
-    }
+    //     int i = (l - 1);
+    //     for( int j = l; j < h; j++ )
+    //     {
+    //         if( nums[ j ] <= pivot )
+    //         {
+    //             i++;
+    //             swap( nums, i, j );
+    //         }
+    //     }
+    //     swap( nums, i+1, h );
+    //     return i+1;
+    // }
+    // private void swap( int[] nums, int i, int j )
+    // {
+    //     int t = nums[ i ];
+    //     nums[ i ] = nums[ j ];
+    //     nums[ j ] = t;
+    // }
 
     /* ******************** merge sort ******************** */
     // Runtime: 189 ms, faster than 11.64% of Java online submissions for Sort an Array.
