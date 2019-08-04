@@ -100,17 +100,17 @@ class Q388_longest_abs_file_path_FAILED
     }
     
     // debug
-    private void levelorder( TreeNode cur )
-    {
-        Queue<TreeNode> q = new LinkedList<TreeNode>();
-        q.offer( cur );
-        while( !q.isEmpty() )
-        {
-            TreeNode ptr = q.remove();
-            System.out.println( ptr.getText() );
-            if( ptr.children.size() != 0 )
-                for( int i = 0; i < ptr.children.size(); i++ )
-                    q.offer( ptr.children.get( i ) );
-        }
-    }
+    // private void levelorder( TreeNode cur )
+    // {
+    //     Queue<TreeNode> q = new LinkedList<TreeNode>();
+    //     q.offer( cur );
+    //     while( !q.isEmpty() )
+    //     {
+    //         TreeNode ptr = q.remove();
+    //         System.out.println( ptr.getText() );
+    //         if( ptr.children.size() != 0 )
+    //             for( int i = 0; i < ptr.children.size(); i++ )
+    //                 q.offer( ptr.children.get( i ) );
+    //     }
+    // }
 }

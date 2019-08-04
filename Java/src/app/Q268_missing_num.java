@@ -1,7 +1,5 @@
 package app;
 
-import java.util.*;
-
 class Q268_missing_num
 {
     // HashSet
@@ -10,14 +8,11 @@ class Q268_missing_num
     // public int missingNumber(int[] nums)
     // {
     //     Set<Integer> set = new HashSet<Integer>();
-        
     //     for( int n: nums )
     //         set.add( n );
-        
     //     for( int i = 0; i <= nums.length; i++ )
     //         if( !set.contains( i ) )
     //             return i;
-        
     //     throw null;
     // }
 

@@ -2,7 +2,6 @@
 
 package app;
 
-import java.lang.Math;
 import java.util.*;
 
 class Q739_daily_temperatures

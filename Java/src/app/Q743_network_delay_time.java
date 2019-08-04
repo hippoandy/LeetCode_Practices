@@ -54,21 +54,21 @@ class Q743_network_delay_time
         return ans;
     }
     
-    private void dfs( Map<Integer, List<int[]>> graph, int node, int elasped )
-    {
-        // If some signal arrived earlier,
-        // we don't need to broadcast it anymore.
-        // Otherwise, we should broadcast the signal.
-        if( elasped >= dist.get( node ) ) return;
+    // private void dfs( Map<Integer, List<int[]>> graph, int node, int elasped )
+    // {
+    //     // If some signal arrived earlier,
+    //     // we don't need to broadcast it anymore.
+    //     // Otherwise, we should broadcast the signal.
+    //     if( elasped >= dist.get( node ) ) return;
 
-        dist.put( node, elasped );
-        // do the boradcast to the next node
-        if( graph.containsKey( node ) )
-        {
-            for( int[] edge: graph.get( node ) )
-                dfs( graph, edge[ 1 ], elasped + edge[ 0 ] );
-        }
-    }
+    //     dist.put( node, elasped );
+    //     // do the boradcast to the next node
+    //     if( graph.containsKey( node ) )
+    //     {
+    //         for( int[] edge: graph.get( node ) )
+    //             dfs( graph, edge[ 1 ], elasped + edge[ 0 ] );
+    //     }
+    // }
     
     private void dijkstra( Map<Integer, List<int[]>> graph, int N, int node, int elasped )
     {

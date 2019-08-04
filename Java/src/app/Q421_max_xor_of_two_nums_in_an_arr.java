@@ -115,13 +115,13 @@ class Q421_max_xor_of_two_nums_in_an_arr
         }
     }
     
-    // to debug
-    private void inorder( TrieNode root )
-    {
-        if( root.containsKey( 0 ) ) inorder( root.get( 0 ) );
-        if( root.containsKey( 1 ) ) inorder( root.get( 1 ) );
+    // debug
+    // private void inorder( TrieNode root )
+    // {
+    //     if( root.containsKey( 0 ) ) inorder( root.get( 0 ) );
+    //     if( root.containsKey( 1 ) ) inorder( root.get( 1 ) );
         
-        if( root.isEnd() )
-            System.out.println( root.getNum() );
-    }
+    //     if( root.isEnd() )
+    //         System.out.println( root.getNum() );
+    // }
 }
