@@ -36,4 +36,11 @@ class Q652_find_dup_subtrees
             ans.add( cur );
         return serial;
     }
+
+    public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode(int x) { val = x; }
+    }
 }
