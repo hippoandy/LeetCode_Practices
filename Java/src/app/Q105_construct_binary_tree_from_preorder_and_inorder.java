@@ -13,13 +13,6 @@ package app;
  */
 class Q105_construct_binary_tree_from_preorder_and_inorder
 {
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) { val = x; }
-    }
-
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         return helper( 0, 0, inorder.length, preorder, inorder );
     }
@@ -40,5 +33,12 @@ class Q105_construct_binary_tree_from_preorder_and_inorder
         root.left = helper( parent + 1, left, i-1, preorder, inorder );
         root.right = helper( parent - left + i + 1, i+1, right, preorder, inorder );
         return root;
+    }
+
+    public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode(int x) { val = x; }
     }
 }
