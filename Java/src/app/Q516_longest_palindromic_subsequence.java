@@ -1,3 +1,5 @@
+package app;
+
 // ref. [SOLUTION] https://leetcode.com/problems/longest-palindromic-subsequence/discuss/99101/Straight-forward-Java-DP-solution
 // ref. https://leetcode.com/problems/longest-palindromic-subsequence/discuss/99111/Evolve-from-brute-force-to-dp
 
