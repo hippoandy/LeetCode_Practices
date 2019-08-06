@@ -1,15 +1,17 @@
-【2019 August 04 進度日誌】
+【2019 August 05 進度日誌】
 Algorithm
-Medium 445: Linked List, Stack (Refer to Q2)
-Medium 348: Design, Array
-Medium 636: Stack
-Medium 77: Backtracking, Lexicographic (binary sorted) combinations
-Medium 490: Breadth-first Search (DFS will failed!)
-Medium 958: Definition of Complete Binary Tree, Tree, Level Order Traversal
-Medium 516: Dynamic Programming (Refer to Q5)
-Medium 8: String, Math
-Medium 133: Graph, Breadth-first Search
-Medium 402: Stack, String, Java StringBuilder
-Hard 23: PriorityQueue, Linked List, Merge Sort
+Hard 42: Dynamic Programming, Stack, Two-pointer
+Medium 277: Array
+Medium 24: Linked List
+Hard 297: Design, Tree, Breadth-first Search (Refer to Q449)
+Hard 482: Design, Stack, Depth-first Search (Refer to Q297, Q449) (Solution Posted!!)
+Medium 939: HashMap, Array
+Medium 59: Array (Refer to Q54)
+Medium 652: Depth-first Search, Tree
+Medium 153: Binary Search
+Medium 78: Backtracking
+Medium 90: Backtracking (Refer to Q78)
+Easy 206: Linked List
+Medium 92: Linked List (Refer to Q206)
 
-#進度日誌 #Andy #Stack #BreadthFirstSearch #Backtracking #DynamicProgramming #PriorityQueue #MergeSort
+#進度日誌 #Andy #Design #BreadthFirstSearch #DepthFirstSearch #Backtracking #DynamicProgramming #BinarySearch #LinkedList
