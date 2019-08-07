@@ -16,6 +16,7 @@ class Q56_merge_intervals
             {   @Override
                 public int compare( int[] i1, int[] i2 )
                 {
+                    // sort by start
                     return (i1[ 0 ] - i2[ 0 ]);
                 }
             }
