@@ -443,7 +443,7 @@ Medium 50: Math
 #### Attempted Question
 
 ```
-Medium 971
+Medium 971 (Completed on Aug. 06, 2019)
 ```
 
 ### 20190717 —————————————————————————
