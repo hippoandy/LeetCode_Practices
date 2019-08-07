@@ -1,17 +1,18 @@
-【2019 August 05 進度日誌】
+【2019 August 06 進度日誌】乾我 LinkedList 好弱......
 Algorithm
-Hard 42: Dynamic Programming, Stack, Two-pointer
-Medium 277: Array
-Medium 24: Linked List
-Hard 297: Design, Tree, Breadth-first Search (Refer to Q449)
-Hard 482: Design, Stack, Depth-first Search (Refer to Q297, Q449) (Solution Posted!!)
-Medium 939: HashMap, Array
-Medium 59: Array (Refer to Q54)
-Medium 652: Depth-first Search, Tree
-Medium 153: Binary Search
-Medium 78: Backtracking
-Medium 90: Backtracking (Refer to Q78)
-Easy 206: Linked List
-Medium 92: Linked List (Refer to Q206)
+Medium 688: Dynamic Programming
+Medium 430: Linked List
+Medium 528: Binary Search, Prefix Sum (Pick element with Proability)
+Medium 698: Backtracking (Hard……)
+Medium 971: Tree, Depth-first Search
+Hard 273: Recursion
+Hard 10: Dynamic Programming
+Medium 332: HashMap, PriorityQueue, Depth-first Search, Graph
+Easy 88: Array, Two-pointer
+Medium 986: Array, Two-pointer (Refer to Q88, Q56)
 
-#進度日誌 #Andy #Design #BreadthFirstSearch #DepthFirstSearch #Backtracking #DynamicProgramming #BinarySearch #LinkedList
+Shell
+
+Easy 193: Regex, grep, sed, awk
+
+#進度日誌 #Andy #Design #TwoPointer #DepthFirstSearch #Backtracking #DynamicProgramming #BinarySearch #PrefixSum #Shell #Regex
