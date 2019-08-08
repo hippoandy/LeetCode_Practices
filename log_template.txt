@@ -1,18 +1,22 @@
-【2019 August 06 進度日誌】乾我 LinkedList 好弱......
+【2019 August 07 進度日誌】
 Algorithm
-Medium 688: Dynamic Programming
-Medium 430: Linked List
-Medium 528: Binary Search, Prefix Sum (Pick element with Proability)
-Medium 698: Backtracking (Hard……)
-Medium 971: Tree, Depth-first Search
-Hard 273: Recursion
-Hard 10: Dynamic Programming
-Medium 332: HashMap, PriorityQueue, Depth-first Search, Graph
-Easy 88: Array, Two-pointer
-Medium 986: Array, Two-pointer (Refer to Q88, Q56)
+Easy 9: String
+Medium 609: HashMap, Regex
+Medium 6: String, Java StringBuilder
+Easy 339: Recursion
+Medium 364: HashMap, Recursion (Refer to Q339, Q690)
+Medium 565: Array
+Medium 755: Array
+Medium 547: Depth-first Search, Breadth-first Search
+Easy 734: HashSet (Refer to Q547)
+Medium 143: Linked List
+Easy 1119: Regex
+Easy 359: Design, HashMap
+Easy 1002: Array, String
+Easy 243: Array
 
 Shell
 
-Easy 193: Regex, grep, sed, awk
+Medium 192: tr, sort, uniq, awk
 
-#進度日誌 #Andy #Design #TwoPointer #DepthFirstSearch #Backtracking #DynamicProgramming #BinarySearch #PrefixSum #Shell #Regex
+#進度日誌 #Andy #Design #TwoPointer #DepthFirstSearch #Backtracking #Reges
