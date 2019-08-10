@@ -1,22 +1,15 @@
 【2019 August 07 進度日誌】
 Algorithm
-Easy 9: String
-Medium 609: HashMap, Regex
-Medium 6: String, Java StringBuilder
-Easy 339: Recursion
-Medium 364: HashMap, Recursion (Refer to Q339, Q690)
-Medium 565: Array
-Medium 755: Array
-Medium 547: Depth-first Search, Breadth-first Search
-Easy 734: HashSet (Refer to Q547)
-Medium 143: Linked List
-Easy 1119: Regex
-Easy 359: Design, HashMap
-Easy 1002: Array, String
-Easy 243: Array
+Medium 1004: Sliding Window
+Medium 487: Sliding Window (Refer to Q1004)
+Easy 485: Array (Refer to Q487)
+Medium 785: Bipartiteness, Breadth-first Search, Depth-first Search
+Medium 250: Depth-first Search
+Medium 379: Design, Queue, HashSet
+Medium 314: Breadth-first Search, HashMap
+Medium 442: Array
+Medium 695: Depth-first Search
+Medium 71: Stack
+Medium 222: Completeness of Binary Tree, Recursion, Binary Search
 
-Shell
-
-Medium 192: tr, sort, uniq, awk
-
-#進度日誌 #Andy #Design #TwoPointer #DepthFirstSearch #Backtracking #Reges
+#進度日誌 #Andy #Design #TwoPointer #DepthFirstSearch #BreadthFirstSearch #Reges
