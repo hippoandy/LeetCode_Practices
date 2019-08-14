@@ -4,6 +4,8 @@ package app;
 
 import java.util.*;
 
+// Runtime: 37 ms, faster than 36.78% of Java online submissions for Top K Frequent Words.
+// Memory Usage: 38.4 MB, less than 73.21% of Java online submissions for Top K Frequent Words
 class Q692_top_k_frequent_words
 {
     public List<String> topKFrequent(String[] words, int k)
