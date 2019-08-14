@@ -11,7 +11,6 @@ class Q692_top_k_frequent_words
         Map<String, Integer> map = new HashMap<String, Integer>();
         for( String s : words )
             map.put( s, map.getOrDefault( s, 0 ) + 1 );
-        System.out.print( map );
         
         // if the count of two words is same then insert based on string compare of the keys
         PriorityQueue<Map.Entry<String, Integer>> maxHeap = new PriorityQueue<Map.Entry<String, Integer>>
