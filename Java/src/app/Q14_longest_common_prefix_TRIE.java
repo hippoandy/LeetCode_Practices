@@ -1,3 +1,5 @@
+// ref. https://stackoverflow.com/questions/1509391/how-to-get-the-one-entry-from-hashmap-without-iterating
+
 package app;
 
 import java.util.*;
