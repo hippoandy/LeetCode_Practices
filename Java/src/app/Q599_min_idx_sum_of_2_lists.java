@@ -9,6 +9,7 @@ class Q599_min_idx_sum_of_2_lists
         if( list1 == null || list1.length == 0 ) return new String[ 1 ];
         if( list2 == null || list2.length == 0 ) return new String[ 1 ];
 
+        // record the index
         Map<String, Integer> andy = new HashMap<String, Integer>();
         for( int i = 0; i < list1.length; i++ ) andy.put( list1[ i ], i );
 
@@ -17,9 +18,11 @@ class Q599_min_idx_sum_of_2_lists
         for( int i = 0; i < list2.length; i++ )
             if( andy.containsKey( list2[ i ] ) )
             {
+                // compute the index sum
                 int idxSum = andy.get( list2[ i ] ) + i;
                 if( idxSum < min )
                 {
+                    // remember to clear the previous result here!
                     res.clear();
                     min = idxSum;
                     res.add( list2[ i ] );
