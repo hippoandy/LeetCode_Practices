@@ -1,5 +1,7 @@
 package app;
 
+// Runtime: 1 ms, faster than 74.22% of Java online submissions for Longest Common Prefix.
+// Memory Usage: 37.5 MB, less than 92.98% of Java online submissions for Longest Common Prefix.
 class Q14_longest_common_prefix_BINSEARCH
 {
     public String longestCommonPrefix( String[] strs )
