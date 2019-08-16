@@ -23,6 +23,25 @@ class Q3_longest_substr_without_repeating_chars_MAP
         }
         return ans;
     }
+
+    /* second version
+    public int lengthOfLongestSubstring(String s)
+    {
+        if( s == null ) return 0;
+        if( s.length() == 0 ) return 0;
+        
+        Map<Character, Integer> map = new HashMap<Character, Integer>();
+        int max = 0;
+        for( int i = 0, j = 0; j < s.length(); j++ )
+        {
+            char c = s.charAt( j );
+            if( map.containsKey( c ) ) i = (map.get( c ) > i) ? map.get( c ) : i;
+            max = (j - i + 1 > max) ? j -i + 1 : max;
+            map.put( c, j+1 );
+        }
+        return max;
+    }
+    */
     
     // // hashset
     // public int lengthOfLongestSubstring(String s)
