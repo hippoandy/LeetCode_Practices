@@ -58,10 +58,10 @@ class Q152_max_product_subarr
         int ans = nums[ 0 ];
         for( int i = 1; i < nums.length; i++ )
         {
-            int tmp = max;
+            int tmp = max; // we need the value from the previous stage 
             max = Math.max(
                 nums[ i ],
-                Math.max( nums[ i ] * max, nums[ i ] * min )
+                Math.max( nums[ i ] * tmp, nums[ i ] * min )
             );
             min = Math.min(
                 nums[ i ],
