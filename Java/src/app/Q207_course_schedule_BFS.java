@@ -11,11 +11,11 @@ class Q207_course_schedule_BFS
     {
         if( prerequisites == null ) return false;
         int[] indegree = new int[ numCourses ];
-        
+
+        // record total num of courses that depends on the curr course
+        for( int[] pair: prerequisites ) indegree[ pair[ 1 ] ]++;
+
         Queue<Integer> q = new LinkedList<Integer>();
-        for( int[] pair: prerequisites )
-            // record total num of courses that depends on the curr course
-            indegree[ pair[ 1 ] ]++;
         // find all the courses that not holds a prerequisites
         // why this works? Total of n courses, labeled from 0 to n-1!
         for( int i = 0; i < indegree.length; i++ )
