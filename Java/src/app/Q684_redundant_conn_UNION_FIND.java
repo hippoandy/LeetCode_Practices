@@ -38,7 +38,6 @@ class Q684_redundant_conn_UNION_FIND
         
         public int find( int id )
         {
-            // path compression
             return (id == this.parent[ id ]) ? id : (this.parent[ id ] = find( this.parent[ id ] ));
         }
         

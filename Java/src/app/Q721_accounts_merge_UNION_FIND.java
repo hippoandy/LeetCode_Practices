@@ -62,7 +62,6 @@ class Q721_accounts_merge_UNION_FIND
         // find the parent of the connected component the index belongs to
         public int find( int x )
         {
-            // path compression
             if( parent[ x ] != x ) parent[ x ] = find( parent[ x ] );
             return parent[ x ];
         }
