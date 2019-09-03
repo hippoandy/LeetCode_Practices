@@ -1,3 +1,5 @@
+// ref. https://leetcode.com/problems/rearrange-string-k-distance-apart/discuss/83192/Java-7-version-of-PriorityQueue-O(nlogn)-with-comments-and-explanations
+
 package app;
 
 import java.util.*;
