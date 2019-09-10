@@ -2,7 +2,7 @@ package app;
 
 import java.util.*;
 
-class Q642_sesign_search_autocomplete_system
+class Q642_design_search_autocomplete_system
 {
     class AutocompleteSystem
     {
