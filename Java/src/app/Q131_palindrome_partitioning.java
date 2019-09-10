@@ -34,7 +34,7 @@ class Q131_palindrome_partitioning
                 if (dist == 1)
                     dp[ i ][ j ] = (s.charAt(i) == s.charAt(j));
                 else
-                    dp[ i ][ j ] = (s.charAt(i) == s.charAt(j)) && dp[ i+1 ][ j-1] ;
+                    dp[ i ][ j ] = (s.charAt(i) == s.charAt(j)) && dp[ i+1 ][ j-1 ];
             }
         
         // find the substring
