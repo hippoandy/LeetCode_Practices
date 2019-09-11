@@ -1,5 +1,9 @@
 package app;
 
+import java.util.*;
+
+// Runtime: 0 ms, faster than 100.00% of Java online submissions for Remove Comments.
+// Memory Usage: 36.2 MB, less than 100.00% of Java online submissions for Remove Comments.
 class Q722_rm_comments
 {
     public List<String> removeComments(String[] source)
