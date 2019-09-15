@@ -17,7 +17,7 @@ class Q780_reaching_points_WORK_BACKWARDS
             else
             {
                 // case (x, y-x)
-                if( tx > sx ) ty %= tx;
+                if( tx > sx )   ty %= tx;
                 // x matches (tx == sx)
                 else return (ty - sy) % tx == 0;
             }
