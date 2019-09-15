@@ -1,3 +1,5 @@
+package app;
+
 class Q780_reaching_points_WORK_BACKWARDS
 {
     public boolean reachingPoints(int sx, int sy, int tx, int ty)
