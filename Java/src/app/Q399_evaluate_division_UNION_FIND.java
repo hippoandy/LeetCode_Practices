@@ -1,3 +1,5 @@
+// ref. https://leetcode.com/problems/evaluate-division/discuss/88170/0ms-C%2B%2B-Union-Find-Solution-EASY-to-UNDERSTAND
+
 package app;
 
 class Q399_evaluate_division_UNION_FIND
