@@ -8,18 +8,21 @@ class Q399_evaluate_division
 {
     public double[] calcEquation(List<List<String>> equations, double[] values, List<List<String>> queries)
     {
-        // building the graph
+        // building the graph (bi-directional)
         Map<String, Map<String, Double>> map = new HashMap<String, Map<String, Double>>();
         for( int i = 0; i < values.length; i++ )
         {
             String a = equations.get( i ).get( 0 );
             String b = equations.get( i ).get( 1 );
-            if( !map.containsKey( a ) )
-                map.put( a, new HashMap<String, Double>() );
-            if( !map.containsKey( b ) )
-                map.put( b, new HashMap<String, Double>() );
-            map.get( a ).put( b, values[ i ] );
-            map.get( b ).put( a, 1 / values[ i ] );
+            // build the edge with weight
+            // super slow!!
+            map.computeIfAbsent( a, x -> new HashMap<String, Double>() ).put( b, values[ i ] );
+            map.computeIfAbsent( b, x -> new HashMap<String, Double>() ).put( a, 1 / values[ i ] );
+            // much faster
+            // if( !map.containsKey( a ) ) map.put( a, new HashMap<String, Double>() );
+            // if( !map.containsKey( b ) ) map.put( b, new HashMap<String, Double>() );
+            // map.get( a ).put( b, values[ i ] );
+            // map.get( b ).put( a, 1 / values[ i ] );
         }
         
         // solution set
