@@ -23,13 +23,13 @@ class Q784_letter_case_permutation
         {
             char c = S.charAt( i );
             char[] str = S.toCharArray();
-            if( c >= 'a' && c <= 'z' )
-                str[ i ] = (char) (c - 32);
-            else if( c >= 'A' && c <= 'Z' )
-                str[ i ] = (char) (c + 32);
-            else continue;
+            if( c >= 'a' && c <= 'z' )      str[ i ] = (char) (c - 32);
+            else if( c >= 'A' && c <= 'Z' ) str[ i ] = (char) (c + 32);
+            else                            continue;
 
             backtracking( new String( str ), i+1 );
+            // the original S is not changed,
+            // that's why we don't need to restore the changes here
         }
     }
 }
