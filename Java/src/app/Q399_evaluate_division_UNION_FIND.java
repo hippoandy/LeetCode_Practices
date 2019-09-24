@@ -1,5 +1,10 @@
 // ref. https://leetcode.com/problems/evaluate-division/discuss/88170/0ms-C%2B%2B-Union-Find-Solution-EASY-to-UNDERSTAND
 
+// The idea is that, given a query [a, b],
+// if they share the same root,
+// find out the value of common_root/a and comon_root/b,
+// then the result is (comon_root/b) / (comon_root/a)
+
 package app;
 
 class Q399_evaluate_division_UNION_FIND
