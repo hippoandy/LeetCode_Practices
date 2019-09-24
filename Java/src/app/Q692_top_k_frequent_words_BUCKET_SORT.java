@@ -15,6 +15,8 @@ class Q692_top_k_frequent_words_BUCKET_SORT
         for( String s : words )
             map.put( s, map.getOrDefault( s, 0 ) + 1 );
         
+        // the max freq could be the total number of words
+        // since 0-index, the length of the bucket should be "words.length + 1"
         List<String>[] bucket = new List[ words.length + 1 ];
         for( String s: map.keySet() )
         {
@@ -27,6 +29,7 @@ class Q692_top_k_frequent_words_BUCKET_SORT
         for( int i = bucket.length-1; i >= 0 && ans.size() < k; i-- )
         {
             if( bucket[ i ] == null ) continue;
+            // the word with the lower alphabetical order comes first.
             Collections.sort( bucket[ i ] );
             ans.addAll( bucket[ i ] );
         }
