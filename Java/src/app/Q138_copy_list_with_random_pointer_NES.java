@@ -28,7 +28,7 @@ class Q138_copy_list_with_random_pointer_NES
     {
         if( head == null ) return null;
         
-        // 1. build the list A --> A' --> B --> B' --> C --> C' --> D --> D'
+        /** 1. build the list A --> A' --> B --> B' --> C --> C' --> D --> D' **/
         Node ptr = head, next;
         while( ptr != null )
         {
@@ -42,17 +42,19 @@ class Q138_copy_list_with_random_pointer_NES
             ptr = next;
         }
         
-        // 2. assign the random ptr
+        /** 2. assign the random ptr **/
         ptr = head;
         while( ptr != null )
         {
             if( ptr.random != null )
+                // ptr.random.next: since we are having dup nodes
                 ptr.next.random = ptr.random.next;
             ptr = ptr.next.next;
         }
         
-        // 3. seperate the list
+        /** 3. seperate the list **/
         Node copy = head.next;
+        // traversing pointers
         Node ptr1 = head, ptr2 = copy;
         while( ptr2.next != null )
         {
