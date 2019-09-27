@@ -5,7 +5,8 @@ package app;
 
 import java.util.*;
 
-class Solution {
+class Q220_contains_dup_3
+{
     public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t)
     {
         if( nums == null ) return false;

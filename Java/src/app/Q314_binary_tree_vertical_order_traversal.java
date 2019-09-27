@@ -1,3 +1,7 @@
+package app;
+
+import java.util.*;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -7,7 +11,7 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution
+class Q314_binary_tree_vertical_order_traversal
 {
     Map<Integer, List<Integer>> map = new HashMap<Integer, List<Integer>>();
     int l = 0;
@@ -48,5 +52,12 @@ class Solution
         // compute the answer
         for( int i = l; i <= r; i++ ) ans.add( map.get( i ) );
         return ans;
+    }
+
+    public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode(int x) { val = x; }
     }
 }

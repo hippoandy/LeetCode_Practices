@@ -2,7 +2,7 @@
 
 package app;
 
-import java.util.*:
+import java.util.*;
 
 class Q957_prison_cells_after_n_days_BF
 {
