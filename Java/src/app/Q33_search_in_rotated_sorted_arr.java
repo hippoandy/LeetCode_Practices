@@ -11,29 +11,65 @@ class Q33_search_in_rotated_sorted_arr
         if( nums == null || nums.length == 0 ) return -1;
 
         int minIdx = findMinIdx( nums );
+
         int l = 0, r = nums.length-1;
         if( target >= nums[ minIdx ] && target <= nums[ r ] ) l = minIdx;
         else r = minIdx;
-        
-        while( l <= r )
+
+        while( l + 1 < r )
         {
             int m = l + (r - l) / 2;
             if( nums[ m ] == target ) return m;
-            else if( target > nums[ m ] ) l = m + 1;
-            else r = m - 1;
+            if( nums[ m ] < target ) l = m;
+            else                     r = m;
         }
+        if( nums[ l ] == target ) return l;
+        if( nums[ r ] == target ) return r;
         return -1;
     }
     
     private int findMinIdx( int[] nums )
     {
-        int l = 0, h = nums.length-1;
-        while( l < h )
+        int l = 0, r = nums.length - 1;
+        while( l + 1 < r )
         {
-            int m = l + (h - l) / 2;
-            if( nums[ m ] > nums[ h ] ) l = m + 1;
-            else h = m;
+            int m = l + (r - l) / 2;
+            if( nums[ m ] > nums[ r ] ) l = m;
+            else                        r = m;
         }
+        // the problem requires the index to be returned
+        if( nums[ l ] > nums[ r ] ) return r;
         return l;
     }
+
+    // public int search(int[] nums, int target)
+    // {
+    //     if( nums == null || nums.length == 0 ) return -1;
+
+    //     int minIdx = findMinIdx( nums );
+    //     int l = 0, r = nums.length-1;
+    //     if( target >= nums[ minIdx ] && target <= nums[ r ] ) l = minIdx;
+    //     else r = minIdx;
+        
+    //     while( l <= r )
+    //     {
+    //         int m = l + (r - l) / 2;
+    //         if( nums[ m ] == target ) return m;
+    //         else if( target > nums[ m ] ) l = m + 1;
+    //         else r = m - 1;
+    //     }
+    //     return -1;
+    // }
+    
+    // private int findMinIdx( int[] nums )
+    // {
+    //     int l = 0, h = nums.length-1;
+    //     while( l < h )
+    //     {
+    //         int m = l + (h - l) / 2;
+    //         if( nums[ m ] > nums[ h ] ) l = m + 1;
+    //         else h = m;
+    //     }
+    //     return l;
+    // }
 }
