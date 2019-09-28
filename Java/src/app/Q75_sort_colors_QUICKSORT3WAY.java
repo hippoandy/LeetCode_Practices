@@ -1,3 +1,4 @@
+// ref. https://www.wikiwand.com/en/Dutch_national_flag_problem
 // ref. https://leetcode.com/problems/sort-colors/discuss/148221/Java-2-pass-counting-sort-and-1-pass-quick-partition-(with-video-tutorial-links)
 
 package app;
@@ -8,27 +9,31 @@ class Q75_sort_colors_QUICKSORT3WAY
     public void sortColors(int[] nums)
     {
         // i = idex of element unvisited
-        int l = 0, i = 0, r = nums.length - 1;
-        while( i <= r )
+        int l = 0, m = 0, r = nums.length - 1;
+        while( m <= r )
         {
-            if( nums[ i ] == 2 )
+            if( nums[ m ] == 2 )
             {
-                swap( nums, i, r );
+                // swap with last digit
+                swap( nums, m, r );
+                // the last digit is now sorted
                 r--;
             }
-            else if( nums[ i ] == 0 )
+            else if( nums[ m ] == 0 )
             {
-                swap( nums, l, i );
-                l++; i++;
+                // swap with fist digit
+                swap( nums, l, m );
+                l++; m++;
             }
-            else    i++;
+            // keep moving
+            else    m++;
         }
     }
     
-    public void swap( int[] nums, int idx_a, int idx_b )
+    public void swap( int[] nums, int a, int b )
     {
-        int tmp = nums[ idx_a ];
-        nums[ idx_a ] = nums[ idx_b ];
-        nums[ idx_b ] = tmp;
+        int tmp = nums[ a ];
+        nums[ a ] = nums[ b ];
+        nums[ b ] = tmp;
     }
 }
