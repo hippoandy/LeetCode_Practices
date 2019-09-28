@@ -3,7 +3,7 @@
 
 package app;
 
-class Q75_sort_colors_QUICKSORT3WAY
+class Q75_sort_colors_DNF
 {
     // quick sort 3-way partition
     public void sortColors(int[] nums)
