@@ -16,6 +16,7 @@ class Q205_isomorphic_strs
             char s_cur = s.charAt( i );
             char t_cur = t.charAt( i );
             if( m1[ s_cur ] != m2[ t_cur ] ) return false;
+            // +1 is to differentiate from default value 0
             m1[ s_cur ] = i+1;
             m2[ t_cur ] = i+1;
         }
