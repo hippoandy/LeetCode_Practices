@@ -13,15 +13,8 @@ import java.util.*;
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Q113_path_sum_II {
-
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) { val = x; }
-    }
-
+class Q113_path_sum_II
+{
     List<List<Integer>> sol = new ArrayList<List<Integer>>();
     
     public List<List<Integer>> pathSum(TreeNode root, int sum)
@@ -30,21 +23,31 @@ class Q113_path_sum_II {
         return sol;
     }
     
-    public void find( TreeNode root, int sum, List<Integer> path)
+    public void find( TreeNode cur, int sum, List<Integer> path)
     {
         // empty tree
-        if( root == null ) return;
+        if( cur == null ) return;
         
-        path.add( root.val );
+        path.add( cur.val );
 
-        if( root.right == null && root.left == null )
+        if( cur.right == null && cur.left == null )
         {
-            if( root.val == sum ) sol.add( path );
+            // after several substraction
+            // we are expecting a node value to be exactly the remaining sum
+            if( cur.val == sum ) sol.add( path );
             return;
         }
 
-        find( root.left, (sum - root.val), new ArrayList<Integer>( path ) );
-        find( root.right, (sum - root.val), new ArrayList<Integer>( path ) );
+        // keep subtracting the sum
+        find( cur.left,  (sum - cur.val), new ArrayList<Integer>( path ) );
+        find( cur.right, (sum - cur.val), new ArrayList<Integer>( path ) );
         return;
+    }
+
+    public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode(int x) { val = x; }
     }
 }
