@@ -20,7 +20,6 @@ class Q55_jump_game_BACKTRACKING
         for( int j = jumps; j >= 1; j-- )
             if( helper( nums, cur + j ) )
                 return true;
-        
         return false;
     }
 }
