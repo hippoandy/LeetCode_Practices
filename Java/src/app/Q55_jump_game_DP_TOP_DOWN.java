@@ -41,7 +41,8 @@ public class Q55_jump_game_DP_TOP_DOWN
                 memo[ cur ] = Memo.GOOD;
                 return true;
             }
-        
+        // not able to reach the end
+        // if it is good, the funct will return in the for loop
         memo[ cur ] = Memo.BAD;
         return false;
     }

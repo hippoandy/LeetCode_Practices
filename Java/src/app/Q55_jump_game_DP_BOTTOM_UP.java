@@ -25,15 +25,18 @@ public class Q55_jump_game_DP_BOTTOM_UP
         
         for( int i = nums.length - 2; i >= 0; i-- )
         {
+            // restricted the range of the current pos
             int furthestJump = Math.min( i+nums[i], nums.length-1 );
             for( int j = i+1; j <= furthestJump; j++ )
                 if( memo[ j ] == Memo.GOOD )
                 {
+                    // current position i could cover a "GOOD" pos j
                     memo[ i ] = Memo.GOOD;
+                    // just need to find one "GOOD" pos
+                    // to make the current pos "GOOD"
                     break;
                 }
         }
-        
         return memo[ 0 ] == Memo.GOOD;
     }
 }
