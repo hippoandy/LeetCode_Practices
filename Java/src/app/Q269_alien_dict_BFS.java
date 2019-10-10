@@ -66,6 +66,7 @@ class Q269_alien_dict_BFS
                         graph.put( c1, set );
                         indegree.put( c2, indegree.get( c2 )+1 );
                     }
+                    // we can determine the order of characters only by first different pair of characters so we cannot add relationship by the rest of characters
                     break;
                 }
             }

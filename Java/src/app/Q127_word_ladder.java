@@ -4,15 +4,16 @@ package app;
 
 import java.util.*;
 
-// Runtime: 50 ms, faster than 71.14% of Java online submissions for Word Ladder.
-// Memory Usage: 40.1 MB, less than 78.83% of Java online submissions for Word Ladder.
+// Runtime: 52 ms, faster than 66.12% of Java online submissions for Word Ladder.
+// Memory Usage: 39.9 MB, less than 84.67% of Java online submissions for Word Ladder.
 class Q127_word_ladder
 {
     public int ladderLength(String beginWord, String endWord, List<String> wordList)
     {
-        Set<String> set = new HashSet<String>();
-        for( String w: wordList ) set.add( w );
-        if( set.contains( beginWord ) ) set.remove( beginWord );
+        // record all the unvisited words
+        Set<String> remains = new HashSet<String>( wordList );
+        // begin word could not be a possible choice
+        if( remains.contains( beginWord ) ) remains.remove( beginWord );
         
         Queue<String> q = new LinkedList<String>();
         q.offer( beginWord );
@@ -20,26 +21,29 @@ class Q127_word_ladder
         while( !q.isEmpty() )
         {
             int size = q.size();
-            // BFS!! complete all the words for current level
+            // BFS, complete all the words for current level
+            // consider all the possible alterations as the same level
             for( int k = 0; k < size; k++ )
             {
                 String pop = q.remove();
                 if( pop.equals( endWord ) ) return len;
                 char[] cur = pop.toCharArray();
-                // consider as the same level!!
+                // change one char by a time
                 for( int i = 0; i < cur.length; i++ )
                     for( char j = 'a'; j <= 'z'; j++ )
                     {
+                        // skip the same char
                         if( cur[ i ] == j ) continue;
 
                         char tmp = cur[ i ];
                         cur[ i ] = j;
                         String candi = new String( cur );
-                        if( set.contains( candi ) )
+                        // remains set contains that word, unvisited yet
+                        if( remains.contains( candi ) )
                         {
                             q.offer( candi );
-                            // visited
-                            set.remove( candi );
+                            // remove from the remains set, as visited
+                            remains.remove( candi );
                         }
                         // restore
                         cur[ i ] = tmp;

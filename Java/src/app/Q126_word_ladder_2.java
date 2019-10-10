@@ -8,42 +8,48 @@ class Q126_word_ladder_2
 {
     public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList)
     {
-        Set<String> remains = new HashSet<String>();
+        // record all the unvisited words
+        Set<String> remains = new HashSet<String>( wordList );
+        // record all the visited words
         Set<String> visited = new HashSet<String>();
-        for( String w: wordList ) remains.add( w );
         
         List<List<String>> ans = new ArrayList<List<String>>();
 
-        int level = 1, minHeight = Integer.MAX_VALUE;
+        int step = 1, minStep = Integer.MAX_VALUE;
         
         Queue<Info> q = new LinkedList<Info>();
-        q.offer( new Info( beginWord, null, level ) );
+        q.offer( new Info( beginWord, null, step ) );
 
         while( !q.isEmpty() )
         {
             Info cur = q.remove();
             // the current path is too long, discard it
-            if( cur.level > minHeight ) break;
+            if( cur.step > minStep ) break;
 
-            // the minHeight will only be changed when the path reached the end word
-            if( cur.word.equals( endWord ) && cur.level <= minHeight )
+            // the minStep will only be changed when the path reached the end word
+            if( cur.word.equals( endWord ) && cur.step <= minStep )
             {
-                minHeight = cur.level;
+                // make sure to store the min path
+                if( cur.step < minStep )
+                {
+                    ans.clear();
+                    minStep = cur.step;
+                }
                 addPath( ans, cur );
                 continue;
             }
-            // when the previous level is finished, delete all the nodes of visited form the remains
+            // when the previous step is finished, delete all the nodes of visited form the remains
             //
             // In this task we want to find all shortest paths.
             // This means that we might need to reuse some nodes and
             // make sure that we don't prune paths that are still valid.
             // We need to make sure that we remove nodes when there is
             // no shorter path that leads to them.
-            // That's why we have "if ( cur.level > level) ""
-            if( cur.level > level )
+            // That's why we have "if ( cur.step > step) ""
+            if( cur.step > step )
             {
                 remains.removeAll( visited );
-                level = cur.level;
+                step = cur.step;
             }
 
             char[] chars = cur.word.toCharArray();
@@ -57,7 +63,7 @@ class Q126_word_ladder_2
                     String candi = new String( chars );
                     if( remains.contains( candi ) )
                     {
-                        q.offer( new Info( candi, cur, cur.level+1 ) );
+                        q.offer( new Info( candi, cur, cur.step+1 ) );
                         // do not remove element from remains here!! (see above)
                         visited.add( candi );
                     }
@@ -81,13 +87,13 @@ class Q126_word_ladder_2
     
     private class Info
     {
-        int level;
+        int step;      // store the steps to reach this word
         String word;
         Info parent;    // store the previous word before changing char
         
-        public Info( String word, Info parent, int level )
+        public Info( String word, Info parent, int step )
         {
-            this.level = level;
+            this.step = step;
             this.word = word;
             this.parent = parent;
         }
