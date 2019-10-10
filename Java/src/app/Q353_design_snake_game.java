@@ -1,3 +1,5 @@
+// ref. https://stackoverflow.com/questions/41030069/c-doubly-linked-list-deleting-element-from-the-tail-using-pop-back
+
 package app;
 
 import java.util.*;
