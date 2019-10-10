@@ -29,11 +29,12 @@ class Q126_word_ladder_2
             // the minStep will only be changed when the path reached the end word
             if( cur.word.equals( endWord ) && cur.step <= minStep )
             {
-                // make sure to store the min path
+                // make sure to record the min one
+                // if found a new min, clear the current ans
                 if( cur.step < minStep )
                 {
                     ans.clear();
-                    minStep = cur.step;
+                    minStep = cur.step; // record the new min
                 }
                 addPath( ans, cur );
                 continue;
