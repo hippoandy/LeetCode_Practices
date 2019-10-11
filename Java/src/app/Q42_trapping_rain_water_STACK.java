@@ -4,14 +4,13 @@ import java.util.*;
 
 // Runtime: 5 ms, faster than 17.72% of Java online submissions for Trapping Rain Water.
 // Memory Usage: 37.9 MB, less than 92.08% of Java online submissions for Trapping Rain Water.
-class Solution
+class Q42_trapping_rain_water_STACK
 {
     // using stack
     public int trap(int[] height)
     {
-        if( height == null ) return 0;
+        if( height == null || height.length == 0 ) return 0;
         int n = height.length;
-        if( n == 0 ) return 0;
 
         Stack<Integer> stack = new Stack<Integer>();
         
